@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Restaurant website</title>
+	<link rel="stylesheet" href="Res.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-zR2Th/03ns5/IAbMqb46vqEVTa7wDxgUCZyxLJVyytvmSQP0nvTfWYSigi0alISU4x4Eq/AT9fPBr6Y6qG6u5aim/frv4//DYdDYWFpCgp2p4iHI+o29P+FYxQjLBC4kL" crossorigin="anonymous">
+</head>
+<body>
+	<!-- navigation part -->
+	<header>
+		<a href="#" class="logo">Food lover<span>.</span></a>
+		<div class="menuToggle" onclick="toggleMenu()"></div>
+		<ul class="navigation">
+			<li><a href="#home" onclick="toggleMenu()">Home</a></li>
+			<li><a href="#about" onclick="toggleMenu()">About Us</a></li>
+			<li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+			<li><a href="#reservation" onclick="toggleMenu()">Reservation</a></li>
+			<li><a href="#special" onclick="toggleMenu()">BLOG</a></li>
+			<li><a href="#footer-section" onclick="toggleMenu()">Contact</a></li>
+		</ul>
+	</header>
+	 <!-- home page -->
+	<section class="home" id="home">
+		<div class="content">
+			<h2>Taste the flavours of SOUTH INDIA</h2>
+			<p class="content">
+				Order from a weekly menu of tasty meals at the click of a button. Say goodbye to meal planning and grocery shopping!
+			</p>
+			<a href="#reservation" class="btn">Book Table</a>
+			<a href="#menu" class="btn">Our Menu</a>
+		</div>
+	</section>
+	<!-- About page -->
+
+	<section class="about" id="about">
+		<div class="row">
+			<div class="col50">
+				<h2 class="tittle"><span>A</span>bout Us</h2>
+				<p>
+					Welcome to Foodie Delight! Located in the heart of Flavor Town, we offer a cozy dining experience with a diverse menu crafted from fresh, locally sourced ingredients. Whether you're here for a casual lunch or a celebratory dinner, our chefs are dedicated to bringing you flavors from around the world, with a special twist. Join us at 123 Culinary Street, or contact us at (123) 456-7890. We're open Tuesday through Friday from 11:00 am to 10:00 pm, and weekends from 9:00 am to 11:00 pm. Closed Mondays for rest and recipe development. We look forward to serving you!
+				</p>
+			</div>
+
+			<div class="col50">
+				<div class="imgBx">
+					<img src="reshome.jpeg" alt="">
+				</div>
+			</div>
+		</div>
+	</section><!-- 
+	menu page -->
+
+	<section class="menu" id="menu">
+		<div class="title">
+			<h5 class="titleText">Food Lover</h5>
+			<h2 class="titleText">Restaurant Menu</h2>
+		</div>
+		<div class="categories">
+			
+			<div class="categoryBox" onclick="window.location.href='#all dishes';">
+				<h3>All dishes</h3>
+			</div>
+			<div class="categoryBox" onclick="window.location.href='#dinner';">
+				<h3>Dinner</h3>
+			</div>
+			<div class="categoryBox" onclick="window.location.href='#lunch';">
+				<h3>Lunch</h3>
+			</div>
+			<div class="categoryBox" onclick="window.location.href='#drinks';">
+				<h3>Drinks</h3>
+			</div>
+			<div class="categoryBox" onclick="window.location.href='#starters';">
+				<h3>Starters</h3>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="box">
+				<div class="imgBx">
+					<img src="menu.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>Special Salads</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="menu2.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>Special Soup</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="menu3.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>Special Pasta</h3>
+				</div>
+		</div>
+</div>
+	</section>
+	
+		<section class="menu" id="menu">
+			<div class="title">
+				<h5 class="titleText">Deals today</h5>
+				<h2 class="titleText"> Today Special dish</h2>
+			</div>
+			<div class="content">
+				<div class="box">
+					<div class="imgBx">
+						<img src="menu5.jpg" alt="">
+					</div>
+					<div class="text">
+						<h3>Special Salads</h3>
+						<p>Fresh and delicious mixed greens with house dressing.</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgBx">
+						<img src="menu6.jpg" alt="">
+					</div>
+					<div class="text">
+						<h3>Special Soup</h3>
+						<p>Fresh and delicious mixed greens with house dressing.</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="imgBx">
+						<img src="menu3.jpg" alt="">
+					</div>
+					<div class="text">
+						<h3>Special Pasta</h3>
+						<p>Fresh and delicious mixed greens with house dressing.</p>
+					</div>
+			</div>
+	</section>
+	<!-- reservation -->
+	
+	<section class="reservation" id="reservation">
+		<div class="reservationForm">
+			<h2 class="titleTextt">Book Your Table</h2>
+			<div class="inputBox">
+				<input type="text" placeholder="Name" required>
+			</div>
+			<div class="inputBox">
+				<input type="email" placeholder="Email" required>
+			</div>
+			<div class="inputBox">
+				<input type="date" placeholder="date" required>
+			</div>
+			<div class="inputBox">
+				<textarea placeholder="Message line..." required></textarea>
+			</div>			
+			<div class="inputBox">
+				<input type="submit" value="Book Now">
+			</div>
+		</div>
+	</section>
+	<section class="special" id="special">
+		<div class="special-offer">
+			<h2>Today's Special Offer</h2>
+			<div class="special-items">
+				<div class="circle-item">
+					<img src="menu2.jpg" alt="Fish Curry">
+					<div class="info">
+						<h3>Fish Curry</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<span class="discount">₹199</span> <span class="original">₹249</span>
+					</div>
+				</div>
+				<div class="circle-item">
+					<img src="menu.jpg" alt="Chicken Tikka">
+					<div class="info">
+						<h3>Chicken Tikka</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<span class="discount">₹399</span> <span class="original">₹499</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="menu-details">
+			<div class="restaurant-logo">
+				<img src="menu6.jpg" alt="Restaurant Logo 1">
+			</div>
+			<div class="restaurant-logo">
+				<img src="menu5.jpg" alt="Restaurant Logo 2">
+			</div>
+			<div class="restaurant-logo">
+				<img src="menu5.jpg" alt="Restaurant Logo 3">
+			</div>
+			<div class="restaurant-logo">
+				<img src="menu2.jpg" alt="Restaurant Logo 4">
+			</div>
+		</div>
+	</section>
+   <!--    Feedback -->
+	
+ <section class="customer-feedback" id="customer-feedback">
+	<div class="restaurant-logo">
+		<!-- <img src="menu.jpg" alt="Restaurant Logo"> -->
+	</div>
+	<h2>Customer Feedback</h2>
+    <div class="feedback-container">
+        <!-- Feedback Box 1 -->
+        <div class="feedback-box">
+            <p>Nunc ullamcorper augue nec accumsan porta. Ut lacinia feugiat viverra. Ut dictum turpis in ipsum sagittis finibus.</p>
+            <div class="customer-info">
+                <p>Frinton Van</p>
+            </div>
+            
+            <img src="menu5.jpg" alt="Customer 1" class="customer-image">
+        </div>
+
+        <!-- Feedback Box 2 -->
+        <div class="feedback-box">
+            <p>Nunc ullamcorper augue nec accumsan porta. Ut lacinia feugiat viverra. Ut dictum turpis in ipsum sagittis finibus.</p>
+            <div class="customer-info">
+                <p>Anne Van</p>
+            </div>
+          
+            <img src="menu.jpg" alt="Customer 2" class="customer-image">
+        </div>
+
+
+        <div class="feedback-box">
+            <p>Nunc ullamcorper augue nec accumsan porta. Ut lacinia feugiat viverra. Ut dictum turpis in ipsum sagittis finibus.</p>
+            <div class="customer-info">
+                <p>Filipe Van</p>
+            </div>
+           
+            <img src="menu3.jpg" alt="Customer 3" class="customer-image">
+        </div>
+    </div>
+</section>
+<section class="keypoints-section">
+    <div class="keypoint">
+        <div class="keypoint-circle">220+</div>
+        <p><b>Best Dishes</b></p>
+    </div>
+    <div class="keypoint">
+        <div class="keypoint-circle">50+</div>
+        <p><b>Awards Won</b></p>
+    </div>
+    <div class="keypoint">
+        <div class="keypoint-circle">80+</div>
+        <p><b>Our Chefs</b></p>
+    </div>
+    <div class="keypoint">
+        <div class="keypoint-circle">200+</div>
+        <p><b>Daily Customers</b></p>
+    </div>
+</section>
+<section class="newsletter">
+    <div class="container">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+        <h2>Subscribe to our Newsletter</h2>
+        <p>subcreibe the part of our quality and sucess to discount and notifiacations of youu.</p>
+        <input type="email" class="email-input" placeholder="Enter your Email">
+        <button class="subscribe-button">Subscribe</button>
+        <p>Your Email is safe with us. We won't spam you.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-section">
+        <!-- Food Lover Info Section -->
+        <div class="footer-box">
+            <h2>Food Lover</h2>
+            <p>better provided to safe and high quality testy and better food  .</p>
+        </div>
+        
+        <!-- Opening Hours Section -->
+        <div class="footer-box">
+            <h2>Opening Hours</h2>
+            <p>Monday: Closed</p>
+            <p>Tue-Fri: 10.00am - 9.00pm</p>
+            <p>Saturday: 10.00am - 5.00pm</p>
+            <p>Sunday: 10.00am - 11.00pm</p>
+        </div>
+        
+        <!-- Latest Tweets Section -->
+        <div class="footer-box">
+            <h2>Latest Tweets</h2>
+            <p><i class="fa-solid fa-twitter"></i> Review from a happy customer!good and higenic food...</p>
+            <a href="https://twitter.com" target="_blank">Read More</a>
+        </div>
+        
+        <!-- Instagram Section -->
+        <div class="footer-box">
+            <h2>Instagram</h2>
+            <div class="instagram-images">
+                <img src="bg.jpg" alt="Instagram Image 1" onclick="window.open('https://www.instagram.com/', '_blank')">
+                <img src="menu2.jpg" alt="Instagram Image 2" onclick="window.open('https://www.instagram.com/', '_blank')">
+                <img src="menu3.jpg" alt="Instagram Image 3" onclick="window.open('https://www.instagram.com/', '_blank')">
+                <img src="menu.jpg" alt="Instagram Image 4" onclick="window.open('https://www.instagram.com/', '_blank')">
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+
+		function toggleMenu()
+		{
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
